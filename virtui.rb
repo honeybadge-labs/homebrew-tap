@@ -5,21 +5,21 @@
 class Virtui < Formula
   desc "TUI automation for AI agents"
   homepage "https://github.com/honeybadge-labs/virtui"
-  version "0.1.3"
+  version "0.1.4"
   license "Apache-2.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/honeybadge-labs/virtui/releases/download/v0.1.3/virtui_darwin_amd64.tar.gz"
-      sha256 "1a98a41e638e769cd96a7ce81f9dc173979b387b9d1199137c8cae05380289ed"
+      url "https://github.com/honeybadge-labs/virtui/releases/download/v0.1.4/virtui_darwin_amd64.tar.gz"
+      sha256 "a0dcb2bc4b84c7db95f5b0a666c5e9f81a7f542dcfd4d4e98a27ccc166190278"
 
       define_method(:install) do
         bin.install "virtui"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/honeybadge-labs/virtui/releases/download/v0.1.3/virtui_darwin_arm64.tar.gz"
-      sha256 "3d5b2308f006a13d2f96c79814ad2e5087919f672908c175959f5ebf788a61f4"
+      url "https://github.com/honeybadge-labs/virtui/releases/download/v0.1.4/virtui_darwin_arm64.tar.gz"
+      sha256 "a72fea870a1fd293b214d005e7013c7f36d376ba54c18c935f04b3376a71fa2e"
 
       define_method(:install) do
         bin.install "virtui"
@@ -29,15 +29,15 @@ class Virtui < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/honeybadge-labs/virtui/releases/download/v0.1.3/virtui_linux_amd64.tar.gz"
-      sha256 "33d236b104c13a4ffc46ada647fcff46151c53440df565b60aae797e7527e00f"
+      url "https://github.com/honeybadge-labs/virtui/releases/download/v0.1.4/virtui_linux_amd64.tar.gz"
+      sha256 "44d5fa818707b7729a6b3cc95a29208c0b55c11a07e918a085a90ae99f182997"
       define_method(:install) do
         bin.install "virtui"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/honeybadge-labs/virtui/releases/download/v0.1.3/virtui_linux_arm64.tar.gz"
-      sha256 "fbceb3fea3205755cab30a7223462ba6af51bcbc0ff61785e25e016cf484097a"
+      url "https://github.com/honeybadge-labs/virtui/releases/download/v0.1.4/virtui_linux_arm64.tar.gz"
+      sha256 "edf9403678623bf6810795d030f05f964aad1f604b746f0c78c27fca046f99b5"
       define_method(:install) do
         bin.install "virtui"
       end
